@@ -17,7 +17,7 @@
                     <a href="">Corso</a>
                 </li>
                 <li>
-                    <a href="">Dopo Corso</a>
+                    <a href="{{route('student.index')}}">Dopo Corso</a>
                 </li>
                 <li>
                     <a href="">Lezione Gratuita</a>
