@@ -59,10 +59,16 @@ body{
 .footer-bar {
     height: 300px;
     background-color: #1B3C59;
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
     ul {
         list-style: none;
         float: right;
         margin-top: 40px;
+        text-align: right;
         li {
             padding: 15px;
         }
@@ -74,6 +80,17 @@ body{
     }
     .wrapper{
         width: 80%;
+    }
+}
+
+.students {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    .student {
+        width: calc(100% / 2);
+        background-color: grey;
+
     }
 }
 

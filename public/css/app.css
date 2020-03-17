@@ -68,10 +68,17 @@ body {
   background-color: #1B3C59;
 }
 
+.footer-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .footer-bar ul {
   list-style: none;
   float: right;
   margin-top: 40px;
+  text-align: right;
 }
 
 .footer-bar ul li {
@@ -86,5 +93,16 @@ body {
 
 .footer-bar .wrapper {
   width: 80%;
+}
+
+.students {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+}
+
+.students .student {
+  width: calc(100% / 2);
+  background-color: grey;
 }
 
