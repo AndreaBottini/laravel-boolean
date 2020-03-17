@@ -7,3 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                <a href="{{route('homepage.homepage')}}">Home</a>
+                </li>
+                <li>
+                    <a href="">Corso</a>
+                </li>
+                <li>
+                    <a href="">Dopo Corso</a>
+                </li>
+                <li>
+                    <a href="">Lezione Gratuita</a>
+                </li>
+                <li>
+                    <button>
+                        <a href="">Candidati Ora</a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
