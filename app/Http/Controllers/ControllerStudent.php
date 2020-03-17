@@ -22,7 +22,9 @@ class ControllerStudent extends Controller
 
     public function show($id)
     {
-        
+        if(!array_key_exists($id, $this->students)) {
+            abort('404');
+        }
     }
 
     private function getAllStudents(){

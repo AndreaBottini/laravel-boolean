@@ -23,7 +23,7 @@ body{
         line-height: 90px;
         float: left;
         img {
-            height: 50px;
+            height: 40px;
             margin: 10px;
         }
     }
@@ -78,19 +78,44 @@ body{
             text-decoration: none;
         }
     }
-    .wrapper{
-        width: 80%;
-    }
+    // .wrapper{
+    //     width: 80%;
+    //     margin: auto;
+    // }
 }
 
 .students {
     display: flex;
     width: 80%;
+    margin: auto;
     flex-wrap: wrap;
     .student {
-        width: calc(100% / 2);
-        background-color: grey;
-
+        width: calc(100% / 2 - 20px);
+        background-color: lightgrey;
+        margin: 10px;
+        padding: 20px;
+        .wrapper-info {
+            img, .text {
+                float: left;
+            }
+            img {
+                width: 90px;
+                margin-right: 10px; 
+            }  
+            .text {
+                width: calc(100% - 100px)
+            }
+            &:after {
+                content: '';
+                display: table;
+                clear: both;
+            }
+        }
+        .description-info {
+            margin-top: 20px;
+            text-align: justify;
+        }
+        
     }
 }
 
