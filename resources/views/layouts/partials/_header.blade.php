@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <title>Boolean Careers</title>
 </head>
 {{-- @dd(Request::route()->getName()) --}}
 <body>
     <div class="container">
-        <nav>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://www.boolean.careers/images/common/logo.png" alt="">
+            </div>
             <ul>
                 <li>
-                <a class="{{(Request::route()->getName() == 'homepage.homepage') ? 'active' : ''}}" href="{{route('homepage.homepage')}}">Home</a>
+                <a class="{{(Request::route()->getName() == 'homepage.homepage') ? 'active' : ''}}" href="{{route('homepage.homepage')}}">HOME</a>
                 </li>
                 <li>
-                    <a href="">Corso</a>
+                    <a href="">CORSO</a>
                 </li>
                 <li>
-                    <a class="{{(Request::route()->getName() == 'students.index') ? 'active' : ''}}" href="{{route('students.index')}}">Dopo Corso</a>
+                    <a class="{{(Request::route()->getName() == 'students.index') ? 'active' : ''}}" href="{{route('students.index')}}">DOPO CORSO</a>
                 </li>
                 <li>
-                    <a href="">Lezione Gratuita</a>
+                    <a href="">LEZIONE GRATUITA</a>
                 </li>
                 <li>
                     <button>
-                        <a href="">Candidati Ora</a>
+                        <a href="">CANDIDATI ORA</a>
                     </button>
                 </li>
             </ul>
