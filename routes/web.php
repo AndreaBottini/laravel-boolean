@@ -19,6 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 //index
 Route::get('/', 'ControllerHome@home')->name('homepage');
+Route::get('/privacy', 'ControllerHome@privacy')->name('homepage.privacy');
+Route::get('/faq', 'ControllerHome@faq')->name('homepage.faq');
 
 //students
-Route::get('/student', 'ControllerStudent@student')->name('students');
+Route::get('/student', 'ControllerStudent@index')->name('student.index');
+Route::get('/student/show/{id}', 'ControllerStudent@show')->name('student.show');

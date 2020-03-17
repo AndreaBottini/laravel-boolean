@@ -10,4 +10,12 @@ class ControllerHome extends Controller
     {
         return 'Collegamento pagina';
     }
+    public function privacy()
+    {
+        return 'Collegamento pagina';
+    }
+    public function faq()
+    {
+        return 'Collegamento pagina';
+    }
 }
