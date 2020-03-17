@@ -8,11 +8,11 @@ class ControllerStudent extends Controller
 {
     public function index()
     {
-        return 'prova il collegamento';
+        return view('student.index');
     }
 
-    public function show()
+    public function show($id)
     {
-        return 'prova il collegamento';
+        return 'student.show';
     }
 }

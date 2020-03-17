@@ -8,14 +8,14 @@ class ControllerHome extends Controller
 {
     public function home()
     {
-        return 'Collegamento pagina';
+        return view('homepage.home');
     }
     public function privacy()
     {
-        return 'Collegamento pagina';
+        return view('homepage.privacy');
     }
     public function faq()
     {
-        return 'Collegamento pagina';
+        return view('homepage.faq');
     }
 }
