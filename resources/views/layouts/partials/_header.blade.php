@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+{{-- @dd(Request::route()->getName()) --}}
 <body>
     <div class="container">
         <nav>
             <ul>
                 <li>
-                <a href="{{route('homepage.homepage')}}">Home</a>
+                <a class="{{(Request::route()->getName() == 'homepage.homepage') ? 'active' : ''}}" href="{{route('homepage.homepage')}}">Home</a>
                 </li>
                 <li>
                     <a href="">Corso</a>
                 </li>
                 <li>
-                    <a href="{{route('student.index')}}">Dopo Corso</a>
+                    <a class="{{(Request::route()->getName() == 'students.index') ? 'active' : ''}}" href="{{route('students.index')}}">Dopo Corso</a>
                 </li>
                 <li>
                     <a href="">Lezione Gratuita</a>

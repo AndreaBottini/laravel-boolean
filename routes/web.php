@@ -23,5 +23,5 @@ Route::get('/privacy', 'ControllerHome@privacy')->name('homepage.privacy');
 Route::get('/faq', 'ControllerHome@faq')->name('homepage.faq');
 
 //students
-Route::get('/students', 'ControllerStudent@index')->name('student.index');
-Route::get('/students/show/{id}', 'ControllerStudent@show')->name('student.show');
+Route::get('/students', 'ControllerStudent@index')->name('students.index');
+Route::get('/students/show/{id}', 'ControllerStudent@show')->name('students.show');
