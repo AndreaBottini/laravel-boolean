@@ -7,17 +7,23 @@ use Illuminate\Http\Request;
 class ControllerStudent extends Controller
 {
     private $students;
+    private $genders;
 
     public function __construct()
     {
         $this->getAllStudents();
+        $this->genders = config('students.genders');
     }
 
     public function index()
     {
         // $students = $this->students;
         // return view('students.index', compact('students'));
-        return view('students.index');
+        
+        $data = [
+            'genders' => $this->genders
+        ];
+        return view('students.index', $data);
     }
 
     public function show($id)
