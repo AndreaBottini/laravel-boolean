@@ -12,8 +12,10 @@ body{
 .navbar {
     background-color: #FFFFFF;
     height: 100px;
+    width: 100%;
     color:#2B4762;
-    // position: fixed;
+    position: fixed;
+    z-index: 1030;
     &:after {
         content: '';
         display: table;
@@ -87,6 +89,7 @@ body{
 .students {
     display: flex;
     width: 80%;
+    padding-top: 120px;
     margin: auto;
     flex-wrap: wrap;
     .student {
@@ -119,3 +122,42 @@ body{
     }
 }
 
+.jumbo {
+    display: flex;
+    width: 80%;
+    padding-top: 180px;;
+    margin: auto;
+    .jumbo-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .img-computer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        img {
+            padding-top: 50px;
+            max-height: 85%;
+            margin: 0 auto;
+        }
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: bold;
+        color: #2B4762;
+    }
+    h2 {
+        font-size: 23px;
+        color: #2B4762;
+    }
+    ul {
+        padding-left: 20px;
+        li {
+            padding-top: 10px;
+            font-size: 18px;
+            color: #2B4762;
+        }
+    }
+    
+}
