@@ -26,7 +26,7 @@ body {
 }
 
 .navbar .logo img {
-  height: 40px;
+  width: 40%;
   margin: 10px;
 }
 
@@ -48,11 +48,11 @@ body {
 }
 
 .navbar ul a:active {
-  color: lime;
+  color: #61CE4E;
 }
 
 .navbar ul button {
-  background-color: lime;
+  background-color: #61CE4E;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;

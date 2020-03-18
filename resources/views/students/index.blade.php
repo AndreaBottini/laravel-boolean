@@ -7,8 +7,8 @@
             <div class="wrapper-info">
                 <img src="{{$student['img']}}" alt="">
                 <div class="text">
-                <a href="{{route('students.show', ['id'=> $key ])}}"></a>
-                    <h2>{{$student['nome']}} ({{$student['eta']}} anni )</h2>
+                <a href="{{route('students.show', ['id'=> $key ])}}">
+                    <h2>{{$student['nome']}} ({{$student['eta']}} anni )</h2></a>
                     <h3>Assunt{{ ($student['genere'] == 'm')? 'o' : 'a'}} da {{$student['azienda']}} come  {{$student['ruolo']}}</h3>   
                 </div>
             </div>
