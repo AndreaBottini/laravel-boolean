@@ -15,6 +15,7 @@ class AddBirthToStudentsTable extends Migration
     {
         Schema::table('students', function (Blueprint $table) {
             $table->text('birth');
+            $table->text('various');
         });
     }
 
