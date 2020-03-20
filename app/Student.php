@@ -10,6 +10,6 @@ class Student extends Model
 
         'name', 
         'surname',
-        'age'
-    ]
+        'age',
+    ];
 }

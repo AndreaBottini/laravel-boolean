@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Student;
+
 class ControllerStudent extends Controller
 {
     private $students;
@@ -78,4 +80,11 @@ class ControllerStudent extends Controller
         // dd($this->students);
 
     } 
+    public function dbCall() 
+    {
+        $students = Student::all();
+        dd($students);
+    }
+
 }
+

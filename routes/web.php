@@ -25,3 +25,6 @@ Route::get('/faq', 'ControllerHome@faq')->name('homepage.faq');
 //students
 Route::get('/students', 'ControllerStudent@index')->name('students.index');
 Route::get('/students/show/{id}', 'ControllerStudent@show')->name('students.show');
+
+//callDB
+Route::get('/students/db', 'ControllerStudent@dbcall')->name('students.db');
