@@ -1,5 +1,5 @@
 //
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 * {
     box-sizing: border-box;
@@ -17,14 +17,12 @@ body{
     width: 100%;
     color:#2B4762;
     position: fixed;
-    z-index: 1030;
     &:after {
         content: '';
         display: table;
         clear: both;
     }
     .logo {
-        line-height: 90px;
         float: left;
         img {
             width: 40%;
@@ -91,7 +89,6 @@ body{
 .students {
     display: flex;
     width: 80%;
-    padding-top: 120px;
     margin: auto;
     flex-wrap: wrap;
     .student {
@@ -163,3 +160,8 @@ body{
     }
     
 }
+.filter {
+ line-height: 220px;
+ margin-left: 30px;;
+}
+
